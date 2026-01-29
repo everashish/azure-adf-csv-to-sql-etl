@@ -8,8 +8,20 @@
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
+		"SinkLinked_password": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://azurestorageaccountone.dfs.core.windows.net/"
+		},
+		"SinkLinked_properties_typeProperties_server": {
+			"value": "sql-db-server1.database.windows.net"
+		},
+		"SinkLinked_properties_typeProperties_database": {
+			"value": "sql_db1"
+		},
+		"SinkLinked_properties_typeProperties_userName": {
+			"value": "admin123"
 		},
 		"containerUri": {
 			"value": ""

@@ -11,9 +11,25 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
 		},
+		"SinkLinked_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'SinkLinked'"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://azurestorageaccountone.dfs.core.windows.net/"
+		},
+		"SinkLinked_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "sql-db-server1.database.windows.net"
+		},
+		"SinkLinked_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sql_db1"
+		},
+		"SinkLinked_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "admin123"
 		},
 		"containerUri": {
 			"type": "string",
@@ -45,8 +61,20 @@
 					"AzureDataLakeStorage1_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
 					},
+					"SinkLinked_password": {
+						"value": "[parameters('SinkLinked_password')]"
+					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"SinkLinked_properties_typeProperties_server": {
+						"value": "[parameters('SinkLinked_properties_typeProperties_server')]"
+					},
+					"SinkLinked_properties_typeProperties_database": {
+						"value": "[parameters('SinkLinked_properties_typeProperties_database')]"
+					},
+					"SinkLinked_properties_typeProperties_userName": {
+						"value": "[parameters('SinkLinked_properties_typeProperties_userName')]"
 					}
 				}
 			},
