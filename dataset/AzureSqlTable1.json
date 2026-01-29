@@ -1,0 +1,52 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SinkLinked",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "employee_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "employee_name",
+				"type": "varchar"
+			},
+			{
+				"name": "department",
+				"type": "varchar"
+			},
+			{
+				"name": "city",
+				"type": "varchar"
+			},
+			{
+				"name": "salary",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "joining_date",
+				"type": "date"
+			},
+			{
+				"name": "experience_years",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "status",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "employee_master"
+		}
+	}
+}
